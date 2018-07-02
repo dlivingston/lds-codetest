@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LDS CodeTest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div id="tile_content" class="tile-content">
+            <div id="tile-card-01" class="tile-card row">
+                <div class="vid-wrapper">
+                    <button class="vid-thumb-btn" onclick="loadVid()"><img src="assets/vid-thumb.png" alt=""></button>
+                    <div id="vid_LbY3DdzV0rA"></div>
+                </div>
+                <div class="text-wrapper">
+                    <h3>News Release</h3>
+                    <h2>Collaboration through advanced technlogy that ipo will be a game-changer.</h2>
+                    <p>That ipo will be a game-changer quarterly sales are at an all-time low, yet first-order optimal strategies old boys club, nor market-facing, nor run it up the flagpole, ping the boss and circle back we don't want to boil the ocean.</p>
+                </div>
+            </div>
+            <div class="tile-card">
+                <div class="vid-wrapper">
+                    <iframe id="ytplayer" type="text/html" width="600" height="320" src="https://www.youtube.com/embed/LbY3DdzV0rA?autoplay=0" frameborder="0"></iframe>
+                </div>
+                <div class="text-wrapper">
+                    <h3>News Release</h3>
+                    <h2>Collaboration through advanced technlogy that ipo will be a game-changer.</h2>
+                    <p>That ipo will be a game-changer quarterly sales are at an all-time low, yet first-order optimal strategies old boys club, nor market-facing, nor run it up the flagpole, ping the boss and circle back we don't want to boil the ocean.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        
+        function loadVid() {
+            var tc = document.getElementById('tile-card-01');
+            tc.classList.remove('row');
+            var iframe = document.createElement("iframe");
+            iframe.setAttribute("frameborder", "0");
+            iframe.setAttribute("width", "600");
+            iframe.setAttribute("height", "320");
+            iframe.setAttribute("src", "https://www.youtube.com/embed/LbY3DdzV0rA?autoplay=1");
+            document.getElementById('vid_LbY3DdzV0rA').appendChild(iframe);
+        }
+    </script>
+</body>
+</html>
